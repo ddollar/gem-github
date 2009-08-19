@@ -5,24 +5,12 @@
 
 Gem::Specification.new do |s|
   s.name = %q{gem-github}
-  s.version = "0.4.1"
+  s.version = "0.4.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["David Dollar"]
   s.date = %q{2009-08-19}
-  s.description = %q{
-Get Github statistics for various versions of a gem
-
-$ gem github railroad
-
-peterhoeg-railroad             fork:no   watchers:7   updated:2009-05-16
-factorylabs-railroad           fork:yes  watchers:8   updated:2009-01-05
-bryanlarsen-railroad           fork:yes  watchers:7   updated:2009-06-30
-nono-railroad                  fork:yes  watchers:7   updated:2009-03-13
-ddollar-railroad               fork:yes  watchers:2   updated:2009-03-13
-terotil-railroad               fork:yes  watchers:2   updated:2009-02-13
-
-}
+  s.description = %q{Show Github-related stats of the same gem from different users}
   s.email = %q{<ddollar@gmail.com>}
   s.extra_rdoc_files = [
     "LICENSE",
