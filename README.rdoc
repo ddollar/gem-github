@@ -1,4 +1,4 @@
-= gem-github-stats
+= gem-github
 
 == Usage
 
