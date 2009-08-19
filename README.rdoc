@@ -2,7 +2,8 @@
 
 == Usage
 
- [~/Code/gem-github-stats/lib] gem github railroad
+ $ gem github railroad
+
  peterhoeg-railroad             fork:no  watchers:7   updated:2009-05-16
  factorylabs-railroad           fork:yes watchers:8   updated:2009-01-05
  bryanlarsen-railroad           fork:yes watchers:7   updated:2009-06-30
