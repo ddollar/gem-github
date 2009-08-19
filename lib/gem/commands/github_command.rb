@@ -31,7 +31,7 @@ class Gem::Commands::GithubCommand < Gem::Command
     end
 
     github_stats_sort(stats).each do |stat|
-      say "%-30s fork:%-3s watchers:%-3d updated:%s" % [
+      say "%-30s fork:%-4s watchers:%-3d updated:%s" % [
         stat[:name],
         stat[:fork] ? 'yes' : 'no',
         stat[:watchers],
