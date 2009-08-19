@@ -5,12 +5,12 @@
 
 Gem::Specification.new do |s|
   s.name = %q{gem-github-stats}
-  s.version = "0.1.0"
+  s.version = "0.2.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["David Dollar"]
   s.date = %q{2009-08-19}
-  s.description = %q{TODO: longer description of your gem}
+  s.description = %q{Show Github-related stats of the same gem from different users}
   s.email = %q{<ddollar@gmail.com>}
   s.extra_rdoc_files = [
     "LICENSE",
@@ -23,6 +23,7 @@ Gem::Specification.new do |s|
      "README.rdoc",
      "Rakefile",
      "VERSION",
+     "gem-github-stats.gemspec",
      "lib/gem/commands/github_command.rb",
      "lib/rubygems_plugin.rb",
      "test/gem-github-stats_test.rb",
@@ -32,7 +33,7 @@ Gem::Specification.new do |s|
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.5}
-  s.summary = %q{TODO: one-line summary of your gem}
+  s.summary = %q{Show Github-related stats of the same gem from different users}
   s.test_files = [
     "test/gem-github-stats_test.rb",
      "test/test_helper.rb"
@@ -43,11 +44,14 @@ Gem::Specification.new do |s|
     s.specification_version = 3
 
     if Gem::Version.new(Gem::RubyGemsVersion) >= Gem::Version.new('1.2.0') then
+      s.add_runtime_dependency(%q<fcoury-octopi>, [">= 0.1.0"])
       s.add_development_dependency(%q<thoughtbot-shoulda>, [">= 0"])
     else
+      s.add_dependency(%q<fcoury-octopi>, [">= 0.1.0"])
       s.add_dependency(%q<thoughtbot-shoulda>, [">= 0"])
     end
   else
+    s.add_dependency(%q<fcoury-octopi>, [">= 0.1.0"])
     s.add_dependency(%q<thoughtbot-shoulda>, [">= 0"])
   end
 end
