@@ -4,7 +4,7 @@ require 'rake'
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
-    gem.name = "gem-github-stats"
+    gem.name = "gem-github"
     gem.summary = %Q{Show Github-related stats of the same gem from different users}
     gem.description = gem.summary
     gem.email = "<ddollar@gmail.com>"
