@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{gem-github}
-  s.version = "0.3.0"
+  s.version = "0.4.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["David Dollar"]
@@ -23,7 +23,7 @@ Gem::Specification.new do |s|
      "README.rdoc",
      "Rakefile",
      "VERSION",
-     "gem-github-stats.gemspec",
+     "gem-github.gemspec",
      "lib/gem/commands/github_command.rb",
      "lib/rubygems_plugin.rb",
      "test/gem-github-stats_test.rb",
