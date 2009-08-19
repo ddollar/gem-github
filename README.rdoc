@@ -1,18 +1,15 @@
 = gem-github-stats
 
-Description goes here.
+== Usage
 
-== Note on Patches/Pull Requests
- 
-* Fork the project.
-* Make your feature addition or bug fix.
-* Add tests for it. This is important so I don't break it in a
-  future version unintentionally.
-* Commit, do not mess with rakefile, version, or history.
-  (if you want to have your own version, that is fine but
-   bump version in a commit by itself I can ignore when I pull)
-* Send me a pull request. Bonus points for topic branches.
+ [~/Code/gem-github-stats/lib] gem github railroad
+ peterhoeg-railroad             fork:no  watchers:7   updated:2009-05-16
+ factorylabs-railroad           fork:yes watchers:8   updated:2009-01-05
+ bryanlarsen-railroad           fork:yes watchers:7   updated:2009-06-30
+ nono-railroad                  fork:yes watchers:7   updated:2009-03-13
+ ddollar-railroad               fork:yes watchers:2   updated:2009-03-13
+ terotil-railroad               fork:yes watchers:2   updated:2009-02-13
 
 == Copyright
 
-Copyright (c) 2009 David Dollar. See LICENSE for details.
+Copyright (c) 2009 David Dollar. MIT license.
