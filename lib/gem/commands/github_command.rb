@@ -28,7 +28,7 @@ class Gem::Commands::GithubCommand < Gem::Command
     stats = specs.map do |(gem, source)|
       next unless source == 'http://gems.github.com'
       stats_from_github_gem_name(gem.first)
-    end
+    end.compact
 
     github_stats_sort(stats).each do |stat|
       say "%-30s fork:%-4s watchers:%-3d updated:%s" % [
@@ -46,7 +46,12 @@ private ######################################################################
 
   def stats_from_github_gem_name(name)
     user_name, repository_name = name.split('-', 2)
-    repository = Octopi::User.find(user_name).repository(repository_name)
+
+    repository = Octopi::User.find(user_name).repositories.detect do |repo|
+      repo.name == repository_name
+    end
+    return unless repository
+
     {
       :name     => name,
       :user     => user_name,
